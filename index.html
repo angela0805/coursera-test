@@ -3,10 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Coursera!</title>
+    <title>Hello Coursera! hovertext</title>
+    <style>
+        h1 {
+            color: red;
+            width: 500px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .red {
+            color: red;
+            font-style: oblique;
+        }
+        span, #section2 {
+            color: green;
+        }
+        .highlight {
+            background-color: yellow;
+            opacity: 0.6;
+        }
+        li.highlight {
+            text-decoration-line: underline;
+            text-transform: capitalize;
+        }
+        h2.highlight {
+            font-style: italic;
+            font-variant: small-caps;
+        }
+        header li {
+            list-style: none;
+        }
+        header a:link, a:visited {
+            text-decoration: none;
+            background-color: green;
+            border: 1px solid blue;
+            color: white;
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 1px;
+        }
+        header a:hover, a:active {
+            background-color: red;
+            font-weight: bolder;
+        }
+
+        header li:nth-child(3) {
+            font-size: 24px;
+        }
+
+        #section1 h2:hover {
+            color:aqua;
+            background-color: black;
+            width:fit-content;
+        }
+        
+
+    </style>
 </head>
 <body>
-    <h1>Hello Coursera!</h1>
+    <div><a href="#heading">to heading</a></div>
+    <div><a href=https://www.youtube.com target="_blank" title="Youtube">youtube</a></div>
+    <span>span</span>
+    <span>span2</span>
+    <div>div3
+        <span>span3</span>
+        more div3
+        <div>div4</div>
+    </div>
+    <h1 id="heading" class="red">Hello Coursera!
+        h1: contents important for SEO (Search Engine Optimization)
+    </h1>
+
+    <header>
+        <ul>
+            <li><a href="#section1" class="red">to bottom</a></li>
+            <li><a href="#section2">to list</a></li>
+            <li><a href=https://www.youtube.com target="_blank" title="Youtube">youtube</a></li>
+        </ul>
+    </header>
+
+    <h2> header 2
+    </h2>
+
+    <div>
+        <ul id="section2">
+        <li>item1</li>
+        <li>listitem 2
+            <ul>
+                <li class="highlight">sublist item 1</li>
+                <li>sublist item 2</li>
+            </ul>
+        </li>
+        <li>list item 3</li>
+        </ul>
+    </div>
+
+    <div>
+        Ordered List Example:
+        <ol>
+            <li>1. </li>
+            <li>2.
+                <ol>
+                    <li>2.a) do this</li>
+                    <li>2.b) do that</li>
+                </ol>
+            </li>
+            <li>3. x &lt; 5 &amp; x &gt; 8 </li>
+        </ol>
+        End of List.
+    </div>
+    <h2>This is text</h2>
+    <h2 class="highlight">This is text&nbsp;2 </h2>
+    <div>
+        entity ref &nbsp; : non-breaking space -- 
+        use when you want a space that would never be broken
+    </div>
+    <h2>
+        this is keyboard quote v entity ref quote: " v &quot;
+    </h2>
+    <div>
+        entity ref &quot; : safeguard against more limited character encodings
+    </div>
+
+    <section id="section1">
+        <h2>head of section</h2>
+        <article>
+            <h3>head article 1</h3>
+            <div> 
+                <a href="https://user-images.githubusercontent.com/5396211/172055726-d4088684-24ad-41b3-8cf4-f2333ea7a803.png"
+                target="_blank" title="link to image">
+                    <img src="https://user-images.githubusercontent.com/5396211/172055726-d4088684-24ad-41b3-8cf4-f2333ea7a803.png" 
+                    alt="image alt text" width="600" height="400">
+                </a>
+            </div>
+
+            <p>
+                thex
+            </p>
+        </article>
+        <article>
+            <h3>head of article 2</h3>
+            <p>
+                text
+            </p>
+        </article>
+    </section>
+
+    <aside>aside text</aside>
+
+    <footer>footer text copyright &copy;</footer>
     
 </body>
 </html>
